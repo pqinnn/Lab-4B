@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Book Collections</title>
+    </head>
+
+    <body>
+        <script>
+
+            const bookData = {
+                "Books":
+                [
+                    {
+                        "title":"The Great Gatsby",
+                        "author":"F. Scott Fitzgerald",
+                        "publicationYear":1925,
+                        "genres":["Fiction","Classics"] 
+                    },
+                    {
+                        "title":"To Kill a Mockingbird",
+                        "author":"Harper Lee",
+                        "publicationYear":1960,
+                        "genres":["Fiction","Coming-of-age"]
+                    }
+                ]
+            };
+
+            //to log the tile of 1st book,using array, 1st = [0]
+            console.log(bookData.Books[0].title);
+
+            //to log the author of 2nd book, using array, 2nd = [1]
+            console.log(bookData.Books[1].author);
+
+            //to log the genres of all books, so use for loop
+            bookData.Books.forEach(book =>{
+                console.log(book.genres);
+            });
+        </script>
+    </body>
+</html>
